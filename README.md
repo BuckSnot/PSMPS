@@ -46,7 +46,7 @@ WorldCoin:      WjoS92UY1DiDrNYZmLSoqf4oyUHx49sfuZ
 PrimeCoin:      ARy7oDUxNuFbRqHpiKMEx5jtHZmse1kTBP
 MCXFee:         kthxdie
 MCXBux:         kthxdie
-SolidCoin:   &lt;none yet - mcxnow fkd&gt;</div></code></pre>
+SolidCoin:      &lt;none yet - mcxnow fkd&gt;</div></code></pre>
 
 <pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>
 INSTALLATION
