@@ -5,20 +5,29 @@ echo ""
 echo ""
 
 echo "Pulling Changes..."
+echo ""
 git pull PSMPS master
+echo ""
 
 echo "Adding Files..."
+echo ""
 git add -A *
+echo ""
 
 echo "Setting Commit Comment"
+echo ""
 git commit -m 'Auto Commit (using bin)'
+echo ""
 
 #dont need to mark this in status
 git config credential.helper store
 
 echo "Pushing Changes..."
+echo ""
 git remote add PSMPS https://github.com/kthxbai2u/PSMPS.git
+echo ""
 git push PSMPS master
+echo ""
 
 echo "GitHub Synchronize Complete. \o/"
 echo ""
