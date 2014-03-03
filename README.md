@@ -50,7 +50,8 @@ MCXFee:         kthxdie
 MCXBux:         kthxdie
 SolidCoin:   &lt;none yet - mcxnow fkd&gt;</div></code></pre>
 
-<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>INSTALLATION
+<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>
+INSTALLATION
 
 1) Switch to root - type in "su" and enter password
 
