@@ -18,8 +18,8 @@ echo ""
 
 echo "Adding Files..."
 echo ""
-#git add --all *
-find . -iname "*" | xargs git add --all
+git add --all \*
+#find . -iname "*" | xargs git add --all
 echo ""
 
 echo "Setting Commit Comment"
