@@ -1,7 +1,14 @@
+
+
 echo ""
-echo ""
-echo "	*-* PSMPS (PoolServ Multi Pool Script) *-*"
-echo ""
+echo "*-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-*"
+echo "*-*                                                   *-*"
+echo "*-* GitHub Update Script - Developed along with PSMPS *-*"
+echo "*-*                                                   *-*"
+echo "*-*   Coded By: kthxbai2u of http://PoolServ.info/    *-*"
+echo "*-*                                                   *-*"
+echo "*-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-*"
+
 echo ""
 
 echo "Pulling Changes..."
@@ -28,6 +35,15 @@ git remote add PSMPS https://github.com/kthxbai2u/PSMPS.git
 echo ""
 git push PSMPS master
 echo ""
+
+echo ""
+echo "*-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-*"
+echo "*-*                                                   *-*"
+echo "*-* GitHub Update Script - Developed along with PSMPS *-*"
+echo "*-*                                                   *-*"
+echo "*-*   Coded By: kthxbai2u of http://PoolServ.info/    *-*"
+echo "*-*                                                   *-*"
+echo "*-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-*" 
 
 echo "GitHub Synchronize Complete. \o/"
 echo ""
