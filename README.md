@@ -17,7 +17,7 @@ server that has ability to reinstall, do it and select Debian
 </code></pre>
 
 <pre><b>Pre-Registration will <u>only cost you $2 USD</u> and the <u>price will rise to $5 USD</u>
-at the end of the day (2459)
+at the end of the day of release. (2459)
 
 Initial release will be a <u>mandatory $5 USD</u> or equivalent in coins below.</b>
 
