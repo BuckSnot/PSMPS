@@ -22,9 +22,9 @@ Initial release will be a <u>mandatory $5 USD</u> or equivalent in coins below.<
 
 Once donated, please email <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a>
 from your (Regular/PayPal/AlertPay/Interac) email. If you've donated any kind of coin
-please include the wallet address sent from. We will respond with a password and archive
-containing the rest of the installation instructions. You will probably be lost without
-them :)
+please include the wallet address sent from. We will respond with a password and 
+archive containing the rest of the installation instructions. You will probably be lost
+without them :)
 
 If sending an Alertpay / PayPal / Interac Email Money Transfer please send it to:
 <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a>
@@ -32,9 +32,11 @@ If sending an Alertpay / PayPal / Interac Email Money Transfer please send it to
 In the case of an <b>Interac Email Transfer</b> please make the question your name and make
 the answer "poolserv".
 
-<b>Donations Please;</b> Or mine whatever pools I get set up (ONLY setting up pools on final server)   
+<b>Donations Please;</b> Or mine whatever pools I get set up (I am ONLY setting up pools on
+final server)   
 
-<b>Donations go towards</b> maintaining the server, keeping an active interest in this project, etc.</pre>
+<b>Donations go towards</b> maintaining the server, keeping an active interest in this project,
+etc.</pre>
 
 <pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>BitCoin:        1DkQUg4kkaTDZMkiTgg5tUQqprB9rkoeRZ
 LiteCoin:       Ld6DAh7dbJEbBDvjG4yxCn61S3moMBWuU6
