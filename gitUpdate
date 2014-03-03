@@ -1,4 +1,5 @@
 git pull PSMPS master
-git remote add PSMPS https://kthxbai2u:Wtfwtf02@github.com/kthxbai2u/PSMPS.git
+git config credential.helper store
+git remote add PSMPS https://github.com/kthxbai2u/PSMPS.git
 git push PSMPS master
 
