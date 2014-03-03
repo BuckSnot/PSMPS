@@ -33,8 +33,7 @@ In the case of an Interac Email Transfer please make the question your name and 
 
 <b>Donations Please;</b> Or mine whatever pools I get set up (ONLY setting up pools on final server)   
 
-<b><u>Donations go towards</u></b> maintaining the server, keeping an active interest in this
-project, etc.</pre>
+<b><u>Donations go towards</u></b> maintaining the server, keeping an active interest in this project, etc.</pre>
 
 <pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>BitCoin:        1DkQUg4kkaTDZMkiTgg5tUQqprB9rkoeRZ
 LiteCoin:       Ld6DAh7dbJEbBDvjG4yxCn61S3moMBWuU6
@@ -62,6 +61,7 @@ SolidCoin:   &lt;none yet - mcxnow fkd&gt;</div></code></pre>
 4) Read the /PSMPS/INSTALL file for instructions on how to proceed further with installation.
 
         - "cat /PSMPS/INSTALL | more"
+        
 </div></code></pre>
 
 </article></center>
