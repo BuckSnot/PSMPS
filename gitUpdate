@@ -1,3 +1,24 @@
+#!/bin/sh
+
+#
+#
+#	CONFIG VARIABLES
+#
+#
+
+PROJ_DIR=/PSMPS/
+
+GIT_NAME=PSMPS
+
+GIT_ADDRESS=https://github.com/kthxbai2u/$GIT_NAME
+
+
+#
+#
+#	STOP EDITING. DO NOT EDIT ANY FURTHER!
+#
+#
+
 
 
 echo ""
@@ -11,25 +32,22 @@ echo "*-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-*"
 
 echo ""
 
-cd /PSMPS/
+cd $PROJ_DIR
 
 echo "Pulling Changes..."
 echo ""
-git pull PSMPS master
+git pull $GIT_NAME master
 echo ""
 
 echo "Adding Files..."
 echo ""
-#git submodule foreach --recursive git add -A --all
 git add -A .
-#git submodule update --init --recursive
-#find ./ * | xargs git add -f --all 
 echo ""
 
 echo "Setting Commit Comment"
 echo ""
-git commit -am 'Auto Commit (using bin)'
-git submodule foreach --recursive "git commit -m 'SubModule Auto Commit (using bin)'"
+git commit -am 'Auto Commit (using gitUpdate)'
+git submodule foreach --recursive "git commit -m 'SubModule Auto Commit (using gitUpdate)'"
 echo ""
 
 #dont need to mark this in status
@@ -37,8 +55,8 @@ git config credential.helper store
 
 echo "Pushing Changes..."
 echo ""
-git remote rm PSMPS
-git remote add PSMPS https://github.com/kthxbai2u/PSMPS.git
+git remote rm $GIT_NAME
+git remote add $GIT_NAME $GIT_ADDRESS.git
 echo ""
 git push PSMPS master
 echo ""
