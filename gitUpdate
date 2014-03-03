@@ -19,7 +19,7 @@ echo ""
 echo "Adding Files..."
 echo ""
 #git submodule foreach --recursive git add -A --all
-git add -A .
+git add .
 #git submodule update --init --recursive
 #find ./ -type d -name "*" | xargs git add -A -u
 echo ""
@@ -35,6 +35,7 @@ git config credential.helper store
 
 echo "Pushing Changes..."
 echo ""
+git remote rm PSMPS
 git remote add PSMPS https://github.com/kthxbai2u/PSMPS.git
 echo ""
 git push PSMPS master
