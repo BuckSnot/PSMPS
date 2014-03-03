@@ -3,10 +3,23 @@ echo ""
 echo "	*-* PSMPS (PoolServ Multi Pool Script) *-*"
 echo ""
 echo ""
+
+echo "Pulling Changes..."
 git pull PSMPS master
+
+echo "Adding Files..."
 git add -A *
+
+echo "Setting Commit Comment"
 git commit -m 'Auto Commit (using bin)'
+
+#dont need to mark this in status
 git config credential.helper store
+
+echo "Pushing Changes..."
 git remote add PSMPS https://github.com/kthxbai2u/PSMPS.git
 git push PSMPS master
 
+echo "GitHub Synchronize Complete. \o/"
+echo ""
+echo ""
