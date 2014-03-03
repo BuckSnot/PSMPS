@@ -29,7 +29,7 @@ You will probably be lost without them :)
 If sending an Alertpay / PayPal / Interac Email Money Transfer please send it to:
 <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a>
 
-In the case of an <u>Interac Email Transfer</u> please make the question your name and the answer "poolserv".
+In the case of an [u]Interac Email Transfer[/u] please make the question your name and the answer "poolserv".
 
 <b>Donations Please;</b> Or mine whatever pools I get set up (ONLY setting up pools on final server)   
 
