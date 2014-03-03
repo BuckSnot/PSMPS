@@ -18,12 +18,12 @@ echo ""
 
 echo "Adding Files..."
 echo ""
-git add -A *
+git add --all *
 echo ""
 
 echo "Setting Commit Comment"
 echo ""
-git commit -m 'Auto Commit (using bin)'
+git commit -am 'Auto Commit (using bin)'
 echo ""
 
 #dont need to mark this in status
