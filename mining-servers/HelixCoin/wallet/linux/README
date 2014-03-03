@@ -1,0 +1,8 @@
+Helixcoind Linux Binary Release
+------
+
+Build Dependencies on Ubuntu/Debian
+
+```
+sudo apt-get install build-essential libssl-dev qt-sdk libboost-all-dev libdb5.1-dev libdb5.1++-dev
+```
