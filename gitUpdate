@@ -11,6 +11,8 @@ echo "*-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-*"
 
 echo ""
 
+cd /PSMPS/
+
 echo "Pulling Changes..."
 echo ""
 git pull PSMPS master
