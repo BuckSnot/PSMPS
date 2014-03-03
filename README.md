@@ -35,8 +35,8 @@ the answer "poolserv".
 <b>Donations Please;</b> Or mine whatever pools I get set up (I am ONLY setting up pools on
 final server)   
 
-<b>Donations go towards</b> maintaining the server, keeping an active interest in this project,
-etc.</pre>
+<b>Donations go towards</b> maintaining the server, keeping an active interest in this
+project, etc.</pre>
 
 <pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>BitCoin:        1DkQUg4kkaTDZMkiTgg5tUQqprB9rkoeRZ
 LiteCoin:       Ld6DAh7dbJEbBDvjG4yxCn61S3moMBWuU6
