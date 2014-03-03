@@ -1,4 +1,11 @@
+echo ""
+echo ""
+echo "	*-* PSMPS (PoolServ Multi Pool Script) *-*"
+echo ""
+echo ""
 git pull PSMPS master
+git add -A *
+git commit -m 'Auto Commit (using bin)'
 git config credential.helper store
 git remote add PSMPS https://github.com/kthxbai2u/PSMPS.git
 git push PSMPS master
