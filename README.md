@@ -36,20 +36,20 @@ In the case of an Interac Email Transfer please make the question your name and 
 <b><u>Donations go towards</u></b> maintaining the server, keeping an active interest in this
 project, etc.</pre>
 
-<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>BitCoin:    1DkQUg4kkaTDZMkiTgg5tUQqprB9rkoeRZ
-LiteCoin:   Ld6DAh7dbJEbBDvjG4yxCn61S3moMBWuU6
-MaxCoin:    mabeu14vSaxfpMEBKcBnQ4JFeFSwH5sQR2
-MinCoin:    M8hnkyZM9SJwwot2xD6qbsd3TafpbH4Bwe
+<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>BitCoin:        1DkQUg4kkaTDZMkiTgg5tUQqprB9rkoeRZ
+LiteCoin:       Ld6DAh7dbJEbBDvjG4yxCn61S3moMBWuU6
+MaxCoin:        mabeu14vSaxfpMEBKcBnQ4JFeFSwH5sQR2
+MinCoin:        M8hnkyZM9SJwwot2xD6qbsd3TafpbH4Bwe
 
-CopperLark: CQQuj9brvjfVJ7Ztw8kiEYsvvp8o9hAzfo
-DevCoin:    1Pzf2kBG1wbp82ECBUjgDNqyRcPjoZ66Ni
+CopperLark:     CQQuj9brvjfVJ7Ztw8kiEYsvvp8o9hAzfo
+DevCoin:        1Pzf2kBG1wbp82ECBUjgDNqyRcPjoZ66Ni
 FeatherCoin:    71BGVWo4UtndVpWxZTvYotRtibZfqNWAn2
-PeerCoin:   PF7j8jb4BnNJeuVLu1BHNp3Xm9c8jqRwdh
-WorldCoin:  WjoS92UY1DiDrNYZmLSoqf4oyUHx49sfuZ
-PrimeCoin:  ARy7oDUxNuFbRqHpiKMEx5jtHZmse1kTBP
-MCXFee:     kthxdie
-MCXBux:     kthxdie
-SolidCoin:  &lt;none yet - mcxnow fkd&gt;</div></code></pre>
+PeerCoin:       PF7j8jb4BnNJeuVLu1BHNp3Xm9c8jqRwdh
+WorldCoin:      WjoS92UY1DiDrNYZmLSoqf4oyUHx49sfuZ
+PrimeCoin:      ARy7oDUxNuFbRqHpiKMEx5jtHZmse1kTBP
+MCXFee:         kthxdie
+MCXBux:         kthxdie
+SolidCoin:   &lt;none yet - mcxnow fkd&gt;</div></code></pre>
 
 <pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>INSTALLATION
 
@@ -60,6 +60,8 @@ SolidCoin:  &lt;none yet - mcxnow fkd&gt;</div></code></pre>
 3) Git a clone of project - type in "git clone https://github.com/kthxbai2u/PSMPS.git /PSMPS/"
 
 4) Read the /PSMPS/INSTALL file for instructions on how to proceed further with installation.
+
+        - "cat /PSMPS/INSTALL | more"
 </div></code></pre>
 
 </article></center>
