@@ -11,23 +11,25 @@ Creator:    kthxbai2u (creds to wallet/stratum/mpos makers)
 Website:    <a href="http://www.poolserv.info/" target="_blank">http://PoolServ.info/</a>
 GitHub:     <a href="https://github.com/kthxbai2u/PSMPS.git" target="_blank">https://github.com/kthxbai2u/PSMPS.git</a></div></code></pre>
 
-<pre><code>NOTE: These instructions are for Debian. If you are not using Debian, convert these at your own risk :P 
-If you are using a VPS or Dedicated server that has ability to reinstall, do it and select Debian</code></pre>
+<pre><code>NOTE: These instructions are for Debian. If you are not using Debian, convert these at your
+own risk :P If you are using a VPS or Dedicated server that has ability to reinstall, do it and select
+the latest stable Debian</code></pre>
 
 <pre><b>Pre-Registration will <u>only cost you $2 USD</u> and the <u>price will rise to $5 USD</u>
 at the end of the day of release. (2459)
 
 Initial release will be a <u>mandatory $5 USD</u> or equivalent in coins below.</b>
 
-Once donated, please email <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a> from your (Regular/PayPal/AlertPay/Interac)
-email. If you've donated any kind of coin please include the wallet address sent from. We 
-will respond with a password and archive containing the rest of the installation instructions.
-You will probably be lost without them :)
+Once donated, please email <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a>
+from your (Regular/PayPal/AlertPay/Interac) email. If you've donated any kind of coin please
+include the wallet address sent from. We will respond with a password and archive containing 
+the rest of the installation instructions. You will probably be lost without them :)
 
 If sending an Alertpay / PayPal / Interac Email Money Transfer please send it to:
 <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a>
 
-In the case of an <b>Interac Email Transfer</b> please make the question your name and the answer "poolserv".
+In the case of an <b>Interac Email Transfer</b> please make the question your name and make
+the answer "poolserv".
 
 <b>Donations Please;</b> Or mine whatever pools I get set up (ONLY setting up pools on final server)   
 
