@@ -12,8 +12,8 @@ Website:    <a href="http://www.poolserv.info/" target="_blank">http://PoolServ.
 GitHub:     <a href="https://github.com/kthxbai2u/PSMPS.git" target="_blank">https://github.com/kthxbai2u/PSMPS.git</a></div></code></pre>
 
 <pre><code>NOTE: These instructions are for Debian. If you are not using Debian, convert these at your
-own risk :P If you are using a VPS or Dedicated server that has ability to reinstall, do it and select
-the latest stable Debian</code></pre>
+own risk :P If you are using a VPS or Dedicated server that has ability to reinstall, do it 
+and select the latest stable Debian</code></pre>
 
 <pre><b>Pre-Registration will <u>only cost you $2 USD</u> and the <u>price will rise to $5 USD</u>
 at the end of the day of release. (2459)
