@@ -31,14 +31,12 @@ If sending an Alertpay / PayPal / Interac Email Money Transfer please send it to
 
 In the case of an Interac Email Transfer please make the question your name and the answer "poolserv".
 
-<b>Donations Please;</b> Or mine whatever pools I get set up (ONLY setting up pools on final
-server)   
+<b>Donations Please;</b> Or mine whatever pools I get set up (ONLY setting up pools on final server)   
 
 <b><u>Donations go towards</u></b> maintaining the server, keeping an active interest in this
 project, etc.</pre>
 
-<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>DONATIONS Please; Or mine whatever pools I get set up (ONLY setting up pools on final server)   
-
+<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>
 BitCoin:    1DkQUg4kkaTDZMkiTgg5tUQqprB9rkoeRZ
 LiteCoin:   Ld6DAh7dbJEbBDvjG4yxCn61S3moMBWuU6
 MaxCoin:    mabeu14vSaxfpMEBKcBnQ4JFeFSwH5sQR2
