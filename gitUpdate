@@ -21,9 +21,9 @@ echo ""
 echo "Adding Files..."
 echo ""
 #git submodule foreach --recursive git add -A --all
-#git add -A .
+git add -a .
 #git submodule update --init --recursive
-find ./ * | xargs git add -f --all 
+#find ./ * | xargs git add -f --all 
 echo ""
 
 echo "Setting Commit Comment"
