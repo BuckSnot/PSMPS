@@ -1,0 +1,31 @@
+# Local Config
+/public/include/config/global.inc.php
+/public/include/config/security.inc.php
+
+# Templates
+/public/templates/compile/*.php
+/public/templates/compile/**
+/public/templates/cache/*.php
+/public/templates/cache/**
+
+# Logs
+/cronjobs/logs
+/cronjobs/logs/**.txt.*.gz
+/logs/*
+
+# Test configs
+public/include/config/global.inc.scrypt.php
+public/include/config/global.inc.sha.php
+
+# IDE Settings
+/.idea/*
+.buildpath
+.project
+.settings
+
+# Site specific Files
+/public/robots.txt
+/public/sitemap.xml
+/public/sitemap.gz
+/public/sitemap.tar.gz
+/public/.htaccess
