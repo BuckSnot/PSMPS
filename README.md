@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 
@@ -444,30 +445,56 @@
 <a name="readmemd" class="anchor" href="#readmemd"><span class="octicon octicon-link"></span></a><a name="psmps" href="#psmps"></a>README.md</h1> 
 
 <pre><code><div>Title:      PSMPS (PoolServ Multi Pool Script)
+=======
+<center><article class="markdown-body entry-content" itemprop="mainContentOfPage">  
+
+<br />
+
+<h1><a name="psmps" class="anchor" href="#psmps"><span class="octicon octicon-link"></span></a>README.md</h1> 
+
+<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:434px; word-wrap:break-word;'>Title:      PSMPS (PoolServ Multi Pool Script)
+>>>>>>> 64cf9cee62066a297ad895c8d9d4d28e0875dde8
 Version:    1.01 - (HelixCoin Version)
 Released:   RELEASE IS WITHIN 1 WEEK
 Creator:    kthxbai2u (creds to wallet/stratum/mpos makers)
 Website:    <a href="http://www.poolserv.info/" target="_blank">http://PoolServ.info/</a>
+<<<<<<< HEAD
 GitHub:     <a href="https://github.com/kthxbai2u/PSMPS.git" target="_blank">https://github.com/kthxbai2u/PSMPS.git</a>
 </div></code></pre>
+=======
+GitHub:     <a href="https://github.com/kthxbai2u/PSMPS.git" target="_blank">https://github.com/kthxbai2u/PSMPS.git</a></div></code></pre>
+>>>>>>> 64cf9cee62066a297ad895c8d9d4d28e0875dde8
 
 <pre><code>NOTE: These instructions are for Debian. If you are not using Debian, convert these at your
 own risk :P If you are using a VPS or Dedicated server that has ability to reinstall, do it 
 and select the latest stable Debian</code></pre>
 
+<<<<<<< HEAD
 <pre><b>Pre-Registration will only cost you $2 USD and the price will rise to $5 USD
 at the end of the day of release. (2459)
 
 Initial release will be a mandatory $5 USD or equivalent in coins below.</b>
 
 Once donated, please email <a href="mailto:donations@poolserv.info">donations@poolserv.info</a>
+=======
+<pre><b>Pre-Registration will <u>only cost you $2 USD</u> and the <u>price will rise to $5 USD</u>
+at the end of the day of release. (2459)
+
+Initial release will be a <u>mandatory $5 USD</u> or equivalent in coins below.</b>
+
+Once donated, please email <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a>
+>>>>>>> 64cf9cee62066a297ad895c8d9d4d28e0875dde8
 from your (Regular/PayPal/AlertPay/Interac) email. If you've donated any kind of coin
 please include the wallet address sent from. We will respond with a password and 
 archive containing the rest of the installation instructions. You will probably be lost
 without them :)
 
 If sending an Alertpay / PayPal / Interac Email Money Transfer please send it to:
+<<<<<<< HEAD
 <a href="mailto:donations@poolserv.info">donations@poolserv.info</a>
+=======
+<a href='mailto:donations@poolserv.info'>donations@poolserv.info</a>
+>>>>>>> 64cf9cee62066a297ad895c8d9d4d28e0875dde8
 
 In the case of an <b>Interac Email Transfer</b> please make the question your name and make
 the answer "poolserv".
@@ -478,7 +505,11 @@ final server)
 <b>Donations go towards</b> maintaining the server, keeping an active interest in this
 project, etc.</pre>
 
+<<<<<<< HEAD
 <pre><code><div>BitCoin:        1DkQUg4kkaTDZMkiTgg5tUQqprB9rkoeRZ
+=======
+<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>BitCoin:        1DkQUg4kkaTDZMkiTgg5tUQqprB9rkoeRZ
+>>>>>>> 64cf9cee62066a297ad895c8d9d4d28e0875dde8
 LiteCoin:       Ld6DAh7dbJEbBDvjG4yxCn61S3moMBWuU6
 MaxCoin:        mabeu14vSaxfpMEBKcBnQ4JFeFSwH5sQR2
 MinCoin:        M8hnkyZM9SJwwot2xD6qbsd3TafpbH4Bwe
@@ -493,7 +524,11 @@ MCXFee:         kthxdie
 MCXBux:         kthxdie
 SolidCoin:      &lt;none yet - mcxnow fkd&gt;</div></code></pre>
 
+<<<<<<< HEAD
 <pre><code><div>
+=======
+<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>
+>>>>>>> 64cf9cee62066a297ad895c8d9d4d28e0875dde8
 INSTALLATION
 
 1) Switch to root - type in "su" and enter password
@@ -508,6 +543,7 @@ INSTALLATION
         
 </div></code></pre>
 
+<<<<<<< HEAD
 <p></p> </article>
   </div>
 
@@ -587,3 +623,6 @@ INSTALLATION
   </body>
 </html>
 
+=======
+</article></center>
+>>>>>>> 64cf9cee62066a297ad895c8d9d4d28e0875dde8
