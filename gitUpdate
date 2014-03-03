@@ -1,3 +1,4 @@
+git pull PSMPS
 git remote add PSMPS https://github.com/kthxbai2u/PSMPS.git
 git push PSMPS master
 
