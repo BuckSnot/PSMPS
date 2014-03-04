@@ -1,0 +1,2 @@
+su - NEWcoind -c '/PSMPS/mining-servers/NEWCoin/wallet/NEWcoind'
+su - NEWcoind -c '/PSMPS/mining-servers/NEWCoin/stratum/NEWcoin-stratum'
