@@ -1,0 +1,23 @@
+#!/bin/sh
+
+echo ""
+echo ""
+echo "Echoing Wallet Data"
+echo ""
+echo ""
+echo ""
+
+
+
+#cut and paste below and change NEWcoin and NEWCoin to yourcoin and YourCoin
+
+echo "HelixCoin Wallet:"
+su - helixcoind -c '/PSMPS/mining-servers/HelixCoin/wallet/helixcoind getaccountaddress ""'
+echo ""
+echo "Wallet Info:"
+su - helixcoind -c '/PSMPS/mining-servers/HelixCoin/wallet/helixcoind getinfo'
+echo ""
+echo ""
+echo ""
+
+
