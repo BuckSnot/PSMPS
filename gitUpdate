@@ -1,12 +1,15 @@
 #!/bin/sh
 
+# ALWAYS CLEAR CLI
+clear
+
 #
 #
 #	CONFIG VARIABLES
 #
 #
 
-PROJ_DIR=/PSMPS/
+PROJ_DIR=/github-projects/PSMPS/
 
 GIT_NAME=PSMPS
 
@@ -60,7 +63,7 @@ echo ""
 git remote rm $GIT_NAME
 git remote add $GIT_NAME $GIT_ADDRESS.git
 echo ""
-git push PSMPS master
+git push $GIT_NAME master
 echo ""
 
 echo ""
@@ -76,3 +79,7 @@ echo ""
 echo "GitHub Synchronize Complete. \o/"
 echo ""
 echo ""
+
+
+# ALWAYS EXIT 0 FOR NO ERROR
+exit 0

@@ -1,0 +1,22 @@
+clear
+echo ""
+echo "TEST of SU/Exit within a script"
+echo ""
+echo "Attempting SU"
+su
+echo "SU finished or skipped"
+echo ""
+echo "TEST of apt-get within a script"
+echo ""
+echo "Attempting apt-get update upgrade install snooper"
+apt-get update
+apt-get -y upgrade
+apt-get -y install snooper
+sleep(5)
+echo "Attempting apt-get remove snooper"
+sleep(5)
+apt-get -y remove snooper
+sleep(5)
+echo "Done"
+
+exit 0
