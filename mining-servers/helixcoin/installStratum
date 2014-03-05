@@ -1,0 +1,31 @@
+#!/bin/sh
+
+cd stratum/
+
+git clone https://github.com/Crypto-Expert/stratum-mining.git
+
+cd stratum-mining
+
+git submodule init
+git submodule update
+git checkout maxcoin # <— very important part to get maxcoin branch
+
+cd externals/maxcoin-hash-python/
+
+git clone https://github.com/Prydie/maxcoin-hash-python.git . ## <-- not the . at the end
+python setup.py install
+
+cd ../python-sha3
+git clone https://github.com/peconi/python-sha3.git . ## <— note a . at the end
+python setup.py install
+
+cd ../stratum
+git clone https://github.com/peconi/stratum.git . ## <— note a . at the end
+python setup.py install
+
+cd ../../../
+
+mv stratum-mining/* ./
+rm -rf stratum-mining
+
+cd ..
