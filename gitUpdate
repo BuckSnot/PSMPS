@@ -9,7 +9,7 @@ clear
 #
 #
 
-PROJ_DIR=/github-projects/PSMPS/
+PROJ_DIR=/PSMPS/
 
 GIT_NAME=PSMPS
 
