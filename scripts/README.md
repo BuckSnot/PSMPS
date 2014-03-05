@@ -6,11 +6,13 @@ Scripts
 
 
 
-RUN THESE SCRIPTS:
+RUN THESE SCRIPTS (AS ROOT):
 
 /PSMPS/scripts/showWalletInfo                 # to show every wallet's info (as long as user updates it)
 
 
-DON'T RUN THESE SCRIPTS:
+
+
+DON'T RUN THESE SCRIPTS (THEY ARE FOR PSMPS USE):
 
 /PSMPS/scripts/startServers                  # DONT TOUCH EXCEPT TO EDIT AND ADD NEW SERVERS

@@ -1,2 +1,11 @@
+#!/bin/sh
+
+# THERE IS NO EXIT 0 BECAUSE WE NEED TO BE ABLE TO ADD LINE TO END OF FILE FROM CLI
+
+# DO NOT ADD EXIT 0 IT WILL BREAK SCRIPT!
+
+# CLEAR THE CLI
+clear
+
 su - NEWcoind -c '/PSMPS/mining-servers/NEWCoin/wallet/NEWcoind'
 su - NEWcoind -c '/PSMPS/mining-servers/NEWCoin/stratum/NEWcoin-stratum'

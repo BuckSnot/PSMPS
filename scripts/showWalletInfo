@@ -1,5 +1,12 @@
 #!/bin/sh
 
+# THERE IS NO EXIT 0 BECAUSE WE NEED TO BE ABLE TO ADD LINE TO END OF FILE FROM CLI
+
+# DO NOT ADD EXIT 0 IT WILL BREAK SCRIPT!
+
+# CLEAR THE CLI
+clear
+
 echo ""
 echo ""
 echo "Echoing Wallet Data"
