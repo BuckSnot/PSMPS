@@ -8,9 +8,7 @@ Scripts
 
 RUN THESE SCRIPTS (AS ROOT):
 
-/PSMPS/scripts/installPreRequisites           # RUN ONCE PER SERVER (VPS/DEDI) SETUP ONLY!
-/PSMPS/scripts/installNewCoin                 # RUN ONCE PER NEW COIN THEN EDIT CONFIGS
-/PSMPS/scripts/showWalletInfo                 # RUN WHEN YOU WANT A LIST OF YOUR WALLET ID'S
+/PSMPS/scripts/showWalletInfo                 # to show every wallet's info (as long as user updates it)
 
 
 

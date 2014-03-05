@@ -12,10 +12,10 @@ clear
 
 
 # CONTINUE ONLY IF ROOT USER!
-if [[ $EUID -ne 0 ]]; then
+if [ "$USERNAME" != "root" ] ; then
 
 	echo ""
-	echo "PSMPS PreRequisite Install"
+	echo "PSMPS Get Wallet Info"
 	echo ""		
 
 	echo "You must be a root user to execute this script!"
@@ -29,13 +29,16 @@ fi
 
 
 
+
+# CLEAR THE CLI
+clear
+
 echo ""
-echo "PSMPS Get Wallet Info"
-echo ""	
+echo ""
 echo "Echoing Wallet Data"
 echo ""
 echo ""
-
+echo ""
 
 
 

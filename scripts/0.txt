@@ -1,0 +1,10 @@
+# SOURCES.LIST has been WIPED. Latest backup is /etc/apt/sources.list.bak.1
+
+deb ftp://ftp.debian.org/debian/ wheezy main non-free contrib
+deb-src ftp://ftp.debian.org/debian/ wheezy main non-free contrib
+
+deb http://security.debian.org/ wheezy/updates main non-free contrib
+
+# wheezy-updates, previously known as 'volatile'
+deb ftp://ftp.debian.org/debian/ wheezy-updates main non-free contrib
+deb-src ftp://ftp.debian.org/debian/ wheezy-updates main non-free contrib

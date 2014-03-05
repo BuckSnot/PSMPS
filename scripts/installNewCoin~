@@ -1,5 +1,30 @@
 #!/bin/sh
 
+# CLEAR THE CLI
+clear 
+
+
+
+
+# CONTINUE ONLY IF ROOT USER!
+if [ "$USERNAME" != "root" ] ; then
+
+	echo ""
+	echo "PSMPS Install New Coin"
+	echo ""		
+
+	echo "You must be a root user to execute this script!"
+	echo "Please execute 'su' in terminal, enter the root"
+	echo "password, and execute this script again!"
+	echo ""
+
+	exit 1
+
+fi
+
+
+
+
 cd stratum/
 
 git clone https://github.com/Crypto-Expert/stratum-mining.git

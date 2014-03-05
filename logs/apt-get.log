@@ -1,0 +1,60 @@
+Hit http://security.debian.org wheezy/updates Release.gpg
+Hit http://security.debian.org wheezy/updates Release
+Hit http://security.debian.org wheezy/updates/main amd64 Packages
+Hit http://security.debian.org wheezy/updates/non-free amd64 Packages
+Hit http://security.debian.org wheezy/updates/contrib amd64 Packages
+Hit http://security.debian.org wheezy/updates/main i386 Packages
+Hit http://security.debian.org wheezy/updates/non-free i386 Packages
+Hit http://security.debian.org wheezy/updates/contrib i386 Packages
+Hit http://security.debian.org wheezy/updates/contrib Translation-en
+Hit http://security.debian.org wheezy/updates/main Translation-en
+Hit ftp://ftp.debian.org wheezy Release.gpg
+Hit http://security.debian.org wheezy/updates/non-free Translation-en
+Hit ftp://ftp.debian.org wheezy-updates Release.gpg
+Hit ftp://ftp.debian.org wheezy Release
+Hit ftp://ftp.debian.org wheezy-updates Release
+Hit ftp://ftp.debian.org wheezy/main Sources
+Hit ftp://ftp.debian.org wheezy/non-free Sources
+Hit ftp://ftp.debian.org wheezy/contrib Sources
+Hit ftp://ftp.debian.org wheezy/main amd64 Packages
+Hit ftp://ftp.debian.org wheezy/non-free amd64 Packages
+Hit ftp://ftp.debian.org wheezy/contrib amd64 Packages
+Hit ftp://ftp.debian.org wheezy/main i386 Packages
+Hit ftp://ftp.debian.org wheezy/non-free i386 Packages
+Hit ftp://ftp.debian.org wheezy/contrib i386 Packages
+Hit ftp://ftp.debian.org wheezy/contrib Translation-en
+Hit ftp://ftp.debian.org wheezy/main Translation-en
+Hit ftp://ftp.debian.org wheezy/non-free Translation-en
+Hit ftp://ftp.debian.org wheezy-updates/main Sources
+Hit ftp://ftp.debian.org wheezy-updates/non-free Sources
+Hit ftp://ftp.debian.org wheezy-updates/contrib Sources
+Hit ftp://ftp.debian.org wheezy-updates/main amd64 Packages/DiffIndex
+Hit ftp://ftp.debian.org wheezy-updates/non-free amd64 Packages
+Hit ftp://ftp.debian.org wheezy-updates/contrib amd64 Packages
+Hit ftp://ftp.debian.org wheezy-updates/main i386 Packages/DiffIndex
+Hit ftp://ftp.debian.org wheezy-updates/non-free i386 Packages
+Hit ftp://ftp.debian.org wheezy-updates/contrib i386 Packages
+Hit ftp://ftp.debian.org wheezy-updates/contrib Translation-en
+Hit ftp://ftp.debian.org wheezy-updates/main Translation-en/DiffIndex
+Hit ftp://ftp.debian.org wheezy-updates/non-free Translation-en
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+apache2 is already the newest version.
+htop is already the newest version.
+nano is already the newest version.
+phpmyadmin is already the newest version.
+postfix is already the newest version.
+mysql-client is already the newest version.
+mysql-client-5.5 is already the newest version.
+mysql-server-5.5 is already the newest version.
+php5 is already the newest version.
+The following package was automatically installed and is no longer required:
+  liblockdev1
+Use 'apt-get autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.

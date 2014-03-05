@@ -1,0 +1,587 @@
+#!/bin/sh
+
+# CLEAR THE CLI
+clear 
+
+
+
+
+# CONTINUE ONLY IF ROOT USER!
+if [[ $EUID -ne 0 ]]; then
+
+	echo "PSMP INSTALL START FAILED - NOT ROOT!" > /PSMP/logs/main.log
+
+	echo ""
+	echo "PSMPS PreRequisite Install"
+	echo ""		
+
+	echo "You must be a root user to execute this script!"
+	echo "Please execute 'su' in terminal, enter the root"
+	echo "password, and execute this script again!"
+	echo ""
+
+	exit 1
+
+fi
+
+
+echo "PSMP INSTALL STARTED" > /PSMP/logs/main.log
+
+
+sContinue=SGISDIFgSDFgikjsdGikdFHfgh
+
+until [ "$sContinue" = "yes" ]
+do
+	
+	if [ "$sContinue" = "quit" ] ; then
+		
+		echo "PSMP INSTALL ABORTED BY USER" >> /PSMP/logs/main.log
+
+		clear
+
+		echo ""
+		echo "PSMPS PreRequisite Install"
+		echo ""
+	
+		echo "Sorry you've got to leave :( See you next time!"
+		echo ""
+
+		exit 0		
+		
+	else #### ELSE ######
+	
+		#CLEAR THE CLI
+		
+		clear
+		
+		echo ""
+		echo "PSMPS PreRequisite Install"
+		echo ""
+		
+		if [ "$sContinue" != "SGISDIFgSDFgikjsdGikdFHfgh" ] ; then
+			echo "You must put in exactly 'yes', or 'quit'"
+                	echo ""			
+		fi
+
+		echo "Continue with install? (yes/quit)"
+	        read sContinue
+        	echo ""
+		
+	
+	fi
+
+
+done
+
+
+
+
+# ASK FOR INFORMATION!!!
+
+sDOMAINNAME=""
+
+#ASK FOR DOMAIN NAME
+until [ "$sDOMAINNAME" != "" ]
+do
+
+		clear
+		
+		echo ""
+		echo "PSMPS PreRequisite Install"
+		echo ""
+		
+		echo "Please enter your Domain Name (Ex. PoolServ.info)"
+	        read sDOMAINNAME
+        	echo ""
+		
+done
+
+
+
+
+echo "Installing Webserver..."
+echo "Please Wait, This may take a minute! Grab a Coffee!"
+echo ""
+
+#
+#
+#
+#	Install PreReq's (SKIP THIS IF THE SERVER WAS PREVIOUSLY SET UP!)
+#
+#
+#
+
+# USER MODIFICATION REQUIRED
+# SET THE HOSTNAME
+hostname $sDOMAINNAME
+
+echo "$sDOMAINNAME" > /etc/hostname
+
+
+echo "DOMAIN: $sDOMAINNAME" >> /PSMP/logs/main.log
+
+
+# Update system & install basic webserver + phpmyadmin
+apt-get update > /PSMPS/logs/apt-get.log
+echo "APT-GET UPDATED" >> /PSMP/logs/main.log
+
+apt-get -y upgrade >> /PSMPS/logs/apt-get.log
+echo "APT-GET UPGRADED" >> /PSMP/logs/main.log
+
+apt-get -y install apache2 php5 mysql-client-5.5 mysql-server-5.5 mysql-client phpmyadmin postfix nano htop >> /PSMPS/logs/apt-get.log
+echo "APT-GET INSTALLED WEBSERVER PACKAGES" >> /PSMP/logs/main.log
+
+# USER INTERACTION REQUIRED
+# Select "Internet Site"
+
+
+# USER INTERACTION REQUIRED
+# Type in your domain (Ex. poolserv.info)
+
+# If it asks for logins / passwords please make note of them in Notepad / GEdit for later.	
+
+
+
+# MySQL CONFIG START
+
+# USER INTERACTION REQUIRED
+# Enter root password for MySQL - Copy login (root) and password to Notepad/GEdit
+
+
+# USER INTERACTION REQUIRED
+# Select Apache2 by pressing space then ok
+
+
+
+# PHPMyAdmin CONFIG START
+
+# USER INTERACTION REQUIRED
+# Select "yes" to "Configure database for phpmyadmin with dbconfig-common?"
+
+# USER INTERACTION REQUIRED
+# Enter PHPMyAdmin user (root) and then enter password twice after - Copy login/pass to Notepad/GEdit
+
+
+
+
+
+
+#APT CONFIG START
+
+# Replace the installed sources.list with the original for the distribution instructions.
+#nano /etc/apt/sources.list
+
+
+# USER INTERACTION REQUIRED
+# Replace with original sources.list - for WHEEZY the sourcesl.list is:
+
+	# DO NOT PASTE INTO TERMINAL, PASTE ONLY INTO NANO OR VIM!
+
+#	deb ftp://ftp.debian.org/debian/ wheezy main non-free contrib
+#	deb-src ftp://ftp.debian.org/debian/ wheezy main non-free contrib
+
+#	deb http://security.debian.org/ wheezy/updates main non-free contrib
+#	deb-src ftp://ftp.debian.org/debian/ wheezy/updates main non-free contrib
+
+	# wheezy-updates, previously known as 'volatile'
+#	deb ftp://ftp.debian.org/debian/ wheezy-updates main non-free contrib
+#	deb-src ftp://ftp.debian.org/debian/ wheezy-updates main non-free contrib
+
+	# DO NOT PASTE INTO TERMINAL, PASTE ONLY INTO NANO OR VIM!
+
+# CTRL + x, press y, press enter to save and exit
+
+
+
+
+
+
+
+
+# CHECK IF USER WANTS TO WRITE OVER SOURCES.LIST FOR WHEEZY ONLY
+# DISASTEROUS IF DIFFERENT VERSION THAN WHEEZY
+
+#ASK IF WRITE OVER SOURCES.LIST
+writeOver=SGISDIFgSDFgikjsdGikdFHfgh
+
+until [ "$writeOver" = "yes" ] || [ "$writeOver" = "no" ]
+do
+	
+	if [ "$writeOver" = "quit" ] ; then
+		
+		echo "PSMP INSTALL ABORTED BY USER - AT OVERWRITE SOURCES.LIST" >> /PSMP/logs/main.log
+
+		clear
+
+		echo ""
+		echo "PSMPS PreRequisite Install"
+		echo ""
+		
+		echo "Domain:     $sDOMAINNAME"
+		echo "WebServer:  Installed"
+		echo ""
+	
+		echo "Sorry you've got to leave :( See you next time!"
+		echo ""
+
+		exit 0		
+	
+	elif [ "$writeOver" != "yes" ] && [ "$writeOver" != "no" ] && [ "$writeOver" != "quit" ] ; then	
+
+		clear
+
+		echo ""
+		echo "PSMPS PreRequisite Install"
+		echo ""
+		
+		echo "Domain:     $sDOMAINNAME"
+		echo "WebServer:  Installed"
+		echo ""
+	
+		if [ "$writeOver" != "SGISDIFgSDFgikjsdGikdFHfgh" ] ; then
+			echo "You must put in exactly 'yes', 'no', or 'quit'"
+                	echo ""
+		fi
+
+		echo "Write OVER TOP of /etc/apt/sources.list ? (WHEEZY ONLY) - (yes/no/quit)"
+	        read writeOver
+        	echo ""
+
+	fi
+
+
+done
+
+
+
+
+clear
+
+if [ "$writeOver" = "yes" ] ; then
+
+	# BACKUP SOURCES.LIST AND MAKE NEW ONE
+	
+	echo "Rotating sources.list backups"
+	echo "ROTATING SOURCES.LIST BACKUP FILES" >> /PSMP/logs/main.log
+
+	index=0;
+
+	for name in /etc/apt/sources.list*
+	do
+	    cp "$name" "$name.$index" >> /PSMP/logs/main.log	
+	    index=$((index+1))
+	done
+
+	#BACKUP CREATED!
+	
+	echo "Writing new sources.list"
+	echo "WRITING NEW SOURCES.LIST FILE" >> /PSMP/logs/main.log
+
+	echo "# SOURCES.LIST has been WIPED. Latest backup is /etc/apt/sources.list.bak.*" > /etc/apt/sources.list
+	
+	echo "" >> /etc/apt/sources.list
+
+	echo "deb ftp://ftp.debian.org/debian/ wheezy main non-free contrib" >> /etc/apt/sources.list
+	echo "deb-src ftp://ftp.debian.org/debian/ wheezy main non-free contrib" >> /etc/apt/sources.list
+
+	echo "" >> /etc/apt/sources.list
+
+	echo "deb http://security.debian.org/ wheezy/updates main non-free contrib" >> /etc/apt/sources.list
+	
+	echo "" >> /etc/apt/sources.list
+
+	echo "# wheezy-updates, previously known as 'volatile'" >> /etc/apt/sources.list
+	echo "deb ftp://ftp.debian.org/debian/ wheezy-updates main non-free contrib" >> /etc/apt/sources.list
+	echo "deb-src ftp://ftp.debian.org/debian/ wheezy-updates main non-free contrib" >> /etc/apt/sources.list	
+	
+	clear
+
+	echo ""
+	echo "PSMPS PreRequisite Install"
+	echo ""
+
+	echo "Domain:     $sDOMAINNAME"
+	echo "WebServer:  Installed"
+	echo "APTConfig:  Backed up (sources.list.bak.*) and Written"
+	echo ""	
+
+elif
+
+	echo "KEEPING EXISTING SOURCES.LIST FILE" >> /PSMP/logs/main.log
+	echo "" >> /PSMP/logs/main.log
+	cat /etc/apt/sources.list >> /PSMP/logs/main.log 
+	echo "" >> /PSMP/logs/main.log
+
+fi
+
+sContinue=kefskdfsDFGsdGsdFgSDfgddd
+
+until [ "$sContinue" = "yes" ] || [ "$sContinue" = "no" ]
+do
+	
+	if [ "$sContinue" = "quit" ] ; then
+		
+		if [ "$writeOver" = "yes" ] ; then
+
+			clear
+
+			echo ""
+			echo "PSMPS PreRequisite Install"
+			echo ""
+
+			echo "Domain:     $sDOMAINNAME"
+			echo "WebServer:  Installed"
+			echo "APTConfig:  Backed up (sources.list.bak.*) and Written"
+			echo ""
+
+		fi
+
+		if [ "$writeOver" = "no" ] ; then
+
+			clear
+
+			echo ""
+			echo "PSMPS PreRequisite Install"
+			echo ""
+
+			echo "Domain:     $sDOMAINNAME"
+			echo "WebServer:  Installed"
+			echo "APTConfig:  Left Alone"
+			echo ""	
+
+		fi
+	
+		echo "Sorry you've got to leave :( See you next time!"
+		echo ""
+		
+		echo "USER ABORTED AT CONTINUE CONFIRMATION" >> /PSMP/logs/main.log
+		
+		exit 0
+	fi
+
+	
+
+
+	echo "If you are asked for logins/passwords please note them in your Notepad/GEdit window."
+	echo "Type 'yes' to continue or 'quit' to quit"
+	read sContinue
+	echo ""
+
+done
+
+echo "Please Wait, This may take a minute! Grab a Coffee!"
+echo ""
+echo ""
+
+
+# USER INTERACTION REQUIRED
+# UPGRADE / UPDATE  
+
+apt-get update >> /PSMPS/logs/apt-get.log
+echo "APT-GET UPDATED" >> /PSMP/logs/main.log
+
+apt-get -y upgrade >> /PSMPS/logs/apt-get.log
+echo "APT-GET UPGRADED" >> /PSMP/logs/main.log
+
+# USER INTERACTION REQUIRED
+# Install Wallet/Stratum/MPOS Pre-Requisites
+
+apt-get -y install build-essential git libssl-dev libboost-all-dev libdb5.1-dev libdb5.1++-dev libgtk2.0-dev libminiupnpc-dev qt4-qmake mingw32 synaptic qt-sdk qt4-dev-tools libqt4-dev libqt4-core libqt4-gui libdb++-dev git memcached php5-memcached php5-mysqlnd php5-curl php5-json libapache2-mod-php5 git build-essential memcached libmemcached-dev python-twisted python-mysqldb python-dev python-setuptools python-memcache python-simplejson python-setuptools >> /PSMPS/logs/apt-get.log
+echo "APT-GET ALL PRE-REQS INSTALLED!" >> /PSMP/logs/main.log
+
+# If it asks for logins / passwords please make note of them in Notepad / GEdit for later.
+
+
+
+
+
+sChangeEditor=kefskdfsDFGsdGsdFgSDfgddd
+
+until [ "$sChangeEditor" = "yes" ] || [ "$sChangeEditor" = "" ] || [ "$sChangeEditor" = "no" ]
+do
+	
+	if [ "$writeOver" = "yes" ] ; then
+
+		clear
+
+		echo ""
+		echo "PSMPS PreRequisite Install"
+		echo ""
+
+		echo "Domain:     $sDOMAINNAME"
+		echo "WebServer:  INSTALLED"
+		echo "APTConfig:  Backed up (sources.list.bak.*) and Written"
+		echo "PreReqs:    INSTALLED"
+		echo ""
+
+	fi
+
+	if [ "$writeOver" = "no" ] ; then
+
+		clear
+
+		echo ""
+		echo "PSMPS PreRequisite Install"
+		echo ""
+
+		echo "Domain:     $sDOMAINNAME"
+		echo "WebServer:  INSTALLED"
+		echo "APTConfig:  Left Alone"
+		echo "PreReqs:    INSTALLED"
+		echo ""	
+
+	fi
+
+
+	if [ "$sChangeEditor" = "quit" ] ; then
+			
+		echo "Sorry you've got to leave :( See you next time!"
+		echo ""
+		
+		echo "USER ABORTED AT NANO SETUP" >> /PSMP/logs/main.log
+		
+		exit 0
+
+	elif [ "$sChangeEditor" = "yes" ] || [ "$sChangeEditor" = "" ] ; then
+
+		echo "USER SET EDITOR TO NANO" >> /PSMP/logs/main.log
+		# Change default editor to Nano (leave vim if your more comfortable) for later on
+		export EDITOR=nano
+
+	elif [ "$sChangeEditor" = "no" ] ; then
+		
+		echo "USER SET EDITOR TO NANO" >> /PSMP/logs/main.log	
+		
+	fi
+
+	echo "Change editor to nano? (yes/no/quit - yes or blank if unsure)"
+	read sChangeEditor
+	echo ""
+
+done
+
+
+
+
+
+
+
+
+
+
+
+#
+#
+#
+#	Git my project - SKIP ONLY IF YOU GIT'd WITHIN THE PAST FEW HOURS
+#
+#
+#
+
+# Change to root dir
+
+cd /
+
+# SUGGEST WIPING OLD INSTALL
+# COMMENTED so you don't accidentally paste it in
+#
+# rm -rf /PSMPS/
+#
+
+
+# Git a clone of project
+
+#git clone https://github.com/kthxbai2u/PSMPS.git /PSMPS/
+
+
+# Chmod and Chown folders
+
+#chown -R www-data:www-data /PSMPS
+#chmod -R 755 /PSMPS
+#chmod -R 777 /PSMPS/mining-servers/
+#chmod -R 777 /PSMPS/logs/
+
+# This will allow any user to read all directories, 
+# and the user/group read/write. Permissions will
+# be further set later on.
+
+
+
+
+#
+#
+#
+#	Install CFS FireWall (SKIP THIS IF THE SERVER WAS PREVIOUSLY SET UP!)
+#			      OR IF YOU DO NOT WANT CSF (NOT RECCOMMENDED!)
+#
+#
+#
+
+# WGet ConfigServ Firewall
+
+#cd ~
+#wget http://configserver.com/free/csf.tgz
+
+
+# Extract csf.tgz
+
+#tar xvf csf.tgz
+
+
+# Change into CSF dir, Install CSF
+
+
+#chmod +x csf/install.generic.sh
+#csf/install.generic.sh
+
+# Edit /etc/csf/csf.conf
+
+#nano /etc/csf/csf.conf
+
+
+# USER INTERACTION REQUIRED		
+# CSF Firewall Config
+# MAKE THE FOLLOWING CHANGES MANUALLY!
+#
+# Change "TESTING = "1"" to "TESTING = "0""
+# Scroll down to "SECTION:IPv4 Port Settings"
+# Update "TCP_IN = " line (Ex. if you changed SSH from 22 to else, change it in this line also) add other ports
+# Update "UDP_IN = " line the same (Ex. if you changed SSH from 22 to else, change it in this line also) add other ports
+# Otherwise leave everything	
+# CTRL + x, press y, press enter to save and exit
+
+# RESTART CSF
+
+#csf -r
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo ""
+echo ""
+echo "END OF SCRIPT! THANK YOU FOR USING MY SCRIPT!"
+echo ""
+echo "kthx / kthxbai2u / kthxdie / Shawn Read"
+echo "http://www.PoolServ.info/"
+echo ""
+echo ""
+echo "LOGS inside /PSMPS/logs/ directory"
+echo ""
+echo ""
+
+
+
+
+
+
+
+
