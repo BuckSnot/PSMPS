@@ -4,18 +4,12 @@
 clear 
 
 
-#STAY IN ROOT FOLDER AND USE ABSOLUTE PATHS
-cd /  > /var/log/psmps-install.log
-
-echo "PSMP MAIN INSTALL STARTED" >> /var/log/psmps-install.log
-
-
 # CONTINUE ONLY IF ROOT USER!
 sUserName=$(whoami)
 
-if [[ "$sUserName" != "root" ]]; then
+echo "$sUserName"
 
-	echo "PSMP INSTALL START FAILED - NOT ROOT! (startInstall Script)" >> /var/log/psmps-install.log
+if [ "$sUserName" != "root" ] ; then
 
 	echo ""
 	echo "PSMPS Start Install Script"
@@ -29,6 +23,16 @@ if [[ "$sUserName" != "root" ]]; then
 	exit 1
 
 fi
+
+
+
+
+#STAY IN ROOT FOLDER AND USE ABSOLUTE PATHS
+cd /  > /var/log/psmps-install.log
+
+echo "PSMP MAIN INSTALL STARTED" >> /var/log/psmps-install.log
+
+
 
 
 sContinue=SGISDIFgSDFgikjsdGikdFHfgh
