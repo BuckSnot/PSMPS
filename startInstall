@@ -4,22 +4,9 @@
 clear 
 
 
+#STAY IN ROOT FOLDER AND USE ABSOLUTE PATHS
+cd /  >> /var/log/psmps-install.log
 
-
-echo ""
-echo "PSMPS Start Install Script"
-echo ""
-
-echo "" >> /var/log/psmps-install.log
-echo "PSMPS Start Install Script" >> /var/log/psmps-install.log
-echo "" >> /var/log/psmps-install.log
-
-
-echo "" 
-echo "Main Install Log is inside /var/log/psmps-install"
-echo "" 
-
-sleep 4
 
 
 # CONTINUE ONLY IF ROOT USER!
@@ -75,13 +62,14 @@ do
 			echo "You must put in exactly 'yes', or 'quit'"
                 	echo ""			
 		fi
-
 		echo "WARNING: THIS WILL DELETE OLD PSMPS DIR AND RE-GIT A NEW ONE!"
 		echo "         Quit now and make backups of your configs!"
 		echo ""
 		echo "ReGit of the project is mandatory (because of updates)"
 		echo ""
-		echo "Continue with install? (yes/quit)"
+		echo "Main Install Log is inside /var/log/psmps-install"
+		echo "" 		
+		echo "Continue with install? Please type 'yes' or 'quit'."
 	        read sContinue
         	echo ""
 		
