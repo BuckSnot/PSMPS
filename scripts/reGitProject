@@ -25,20 +25,21 @@ cd /
 # COMMENTED so you don't accidentally paste it in
 #
 
-rm -rf /PSMPS2/
-
+rm -rf /PSMPS2
 
 
 echo "GITTING PROJECT"
 
+
 # Git a clone of project
-echo "GITING PROJECT" >> /PSMPS2/logs/main.log
-git clone https://github.com/kthxbai2u/PSMPS.git /PSMPS2/ > /PSMPS2/logs/git.log
+echo "GITING PROJECT" #>> /PSMPS2/logs/main.log
+
+git clone https://github.com/kthxbai2u/PSMPS.git /PSMPS2/ #> /PSMPS2/logs/git.log
 
 echo "CHMODDING FILES"
 
 # Chmod and Chown folders
-echo "CHMODDING FILES" >> /PSMPS2/logs/main.log
+echo "CHMODDING FILES" #>> /PSMPS2/logs/main.log
 
 chown -R www-data:www-data /PSMPS2
 chmod -R 775 /PSMPS2
@@ -67,7 +68,7 @@ do
 	
 	if [ "$sContinue" = "quit" ] ; then
 		
-		echo "PSMP INSTALL ABORTED BY USER" >> /PSMPS2/logs/main.log
+		echo "PSMP INSTALL ABORTED BY USER" #>> /PSMPS2/logs/main.log
 
 		clear
 

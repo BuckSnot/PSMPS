@@ -6,12 +6,12 @@ clear
 
 
 
-echo "PSMP INSTALL STARTED (startInstall Script)" > /PSMPS2/logs/main.log
+echo "PSMP INSTALL STARTED (startInstall Script)" #> /PSMPS2/logs/main.log
 
 # CONTINUE ONLY IF ROOT USER!
 if [[ $EUID -ne 0 ]]; then
 
-	echo "PSMP INSTALL START FAILED - NOT ROOT! (startInstall Script)" > /PSMPS2/logs/main.log
+	echo "PSMP INSTALL START FAILED - NOT ROOT! (startInstall Script)" #> /PSMPS2/logs/main.log
 
 	echo ""
 	echo "PSMPS Start Install Script"
@@ -34,7 +34,7 @@ do
 	
 	if [ "$sContinue" = "quit" ] ; then
 		
-		echo "PSMP INSTALL ABORTED BY USER (startInstall Script)" >> /PSMPS2/logs/main.log
+		echo "PSMP INSTALL ABORTED BY USER (startInstall Script)" #>> /PSMPS2/logs/main.log
 
 		clear
 
