@@ -1,7 +1,8 @@
 #!/bin/sh
 
-# ALWAYS CLEAR CLI
-clear
+# CLEAR THE CLI
+clear 
+
 
 #
 #
@@ -22,8 +23,6 @@ GIT_ADDRESS=https://github.com/kthxbai2u/$GIT_NAME
 #
 #
 
-
-
 echo ""
 echo "*-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-*"
 echo "*-*                                                   *-*"
@@ -34,6 +33,29 @@ echo "*-*                                                   *-*"
 echo "*-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-*"
 
 echo ""
+
+# CONTINUE ONLY IF ROOT USER!
+sUserName=$(whoami)
+
+if [ "$sUserName" != "root" ] ; then
+
+	echo "GitHub Update Script - NOT ROOT! (startInstall Script)"
+
+	echo ""
+	echo "PSMPS Start Install Script"
+	echo ""		
+
+	echo "You must be a root user to execute this script!"
+	echo "Please execute 'su' in terminal, enter the root"
+	echo "password, and execute this script again!"
+	echo ""
+
+	exit 1
+
+fi
+
+
+
 
 cd $PROJ_DIR
 

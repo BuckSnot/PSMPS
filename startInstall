@@ -5,12 +5,15 @@ clear
 
 
 #STAY IN ROOT FOLDER AND USE ABSOLUTE PATHS
-cd /  >> /var/log/psmps-install.log
+cd /  > /var/log/psmps-install.log
 
+echo "PSMP MAIN INSTALL STARTED" >> /var/log/psmps-install.log
 
 
 # CONTINUE ONLY IF ROOT USER!
-if [[ $EUID -ne 0 ]]; then
+sUserName=$(whoami)
+
+if [[ "$sUserName" != "root" ]]; then
 
 	echo "PSMP INSTALL START FAILED - NOT ROOT! (startInstall Script)" >> /var/log/psmps-install.log
 
