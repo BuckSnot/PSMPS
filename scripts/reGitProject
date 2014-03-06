@@ -1,0 +1,113 @@
+#!/bin/sh
+
+# CLEAR THE CLI
+clear
+
+#
+#
+#
+#	Git my project - SKIP ONLY IF YOU GIT'd WITHIN THE PAST FEW HOURS
+#
+#
+#
+
+
+
+echo "Attempting ReGit"
+
+
+
+# Change to root dir
+
+cd /
+
+# SUGGEST WIPING OLD INSTALL
+# COMMENTED so you don't accidentally paste it in
+#
+
+rm -rf /PSMPS2/
+
+
+
+echo "GITTING PROJECT"
+
+# Git a clone of project
+echo "GITING PROJECT" >> /PSMPS2/logs/main.log
+git clone https://github.com/kthxbai2u/PSMPS.git /PSMPS2/ > /PSMPS2/logs/git.log
+
+echo "CHMODDING FILES"
+
+# Chmod and Chown folders
+echo "CHMODDING FILES" >> /PSMPS2/logs/main.log
+
+chown -R www-data:www-data /PSMPS2
+chmod -R 775 /PSMPS2
+chmod -R 777 /PSMPS2/mining-servers/
+chmod -R 777 /PSMPS2/logs/
+chmod -R 777 /PSMPS2/scripts/
+
+# This will allow any user to read all directories, 
+# and the user/group read/write. Permissions will
+# be further set later on.
+
+
+echo "Completed ReGit"
+
+
+sleep 10
+
+
+
+
+
+sContinue=SGISDIFgSDFgikjsdGikdFHfgh
+
+until [ "$sContinue" = "yes" ]
+do
+	
+	if [ "$sContinue" = "quit" ] ; then
+		
+		echo "PSMP INSTALL ABORTED BY USER" >> /PSMPS2/logs/main.log
+
+		clear
+
+		echo ""
+		echo "PSMPS ReGit Script"
+		echo ""
+	
+		echo "You may manually run /PSMPS/scripts/installPreRequisites later :)"
+		echo "Sorry you've got to leave :( See you next time!"
+		echo ""
+
+		exit 0		
+		
+	else #### ELSE ######
+	
+		#CLEAR THE CLI
+		
+		clear
+		
+		echo ""
+		echo "PSMPS ReGit Script"
+		echo ""
+		
+		if [ "$sContinue" != "SGISDIFgSDFgikjsdGikdFHfgh" ] ; then
+			echo "You must put in exactly 'yes', or 'quit'"
+                	echo ""			
+		fi
+
+		echo "Continue with install (run installPreRequisites)? (yes/quit)"
+	        read sContinue
+        	echo ""
+	
+	fi
+
+
+done
+
+cd /PSMPS2/scripts/
+
+chmod +x installPreRequisites
+
+./installPreRequisites
+

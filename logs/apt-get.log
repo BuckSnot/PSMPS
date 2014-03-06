@@ -1,42 +1,29 @@
 Hit http://security.debian.org wheezy/updates Release.gpg
 Hit http://security.debian.org wheezy/updates Release
 Hit http://security.debian.org wheezy/updates/main amd64 Packages
-Hit http://security.debian.org wheezy/updates/non-free amd64 Packages
-Hit http://security.debian.org wheezy/updates/contrib amd64 Packages
+Hit http://ftp.debian.org wheezy Release.gpg
 Hit http://security.debian.org wheezy/updates/main i386 Packages
-Hit http://security.debian.org wheezy/updates/non-free i386 Packages
-Hit http://security.debian.org wheezy/updates/contrib i386 Packages
-Hit http://security.debian.org wheezy/updates/contrib Translation-en
 Hit http://security.debian.org wheezy/updates/main Translation-en
-Hit ftp://ftp.debian.org wheezy Release.gpg
-Hit http://security.debian.org wheezy/updates/non-free Translation-en
-Hit ftp://ftp.debian.org wheezy-updates Release.gpg
-Hit ftp://ftp.debian.org wheezy Release
-Hit ftp://ftp.debian.org wheezy-updates Release
-Hit ftp://ftp.debian.org wheezy/main Sources
-Hit ftp://ftp.debian.org wheezy/non-free Sources
-Hit ftp://ftp.debian.org wheezy/contrib Sources
-Hit ftp://ftp.debian.org wheezy/main amd64 Packages
-Hit ftp://ftp.debian.org wheezy/non-free amd64 Packages
-Hit ftp://ftp.debian.org wheezy/contrib amd64 Packages
-Hit ftp://ftp.debian.org wheezy/main i386 Packages
-Hit ftp://ftp.debian.org wheezy/non-free i386 Packages
-Hit ftp://ftp.debian.org wheezy/contrib i386 Packages
-Hit ftp://ftp.debian.org wheezy/contrib Translation-en
-Hit ftp://ftp.debian.org wheezy/main Translation-en
-Hit ftp://ftp.debian.org wheezy/non-free Translation-en
-Hit ftp://ftp.debian.org wheezy-updates/main Sources
-Hit ftp://ftp.debian.org wheezy-updates/non-free Sources
-Hit ftp://ftp.debian.org wheezy-updates/contrib Sources
-Hit ftp://ftp.debian.org wheezy-updates/main amd64 Packages/DiffIndex
-Hit ftp://ftp.debian.org wheezy-updates/non-free amd64 Packages
-Hit ftp://ftp.debian.org wheezy-updates/contrib amd64 Packages
-Hit ftp://ftp.debian.org wheezy-updates/main i386 Packages/DiffIndex
-Hit ftp://ftp.debian.org wheezy-updates/non-free i386 Packages
-Hit ftp://ftp.debian.org wheezy-updates/contrib i386 Packages
-Hit ftp://ftp.debian.org wheezy-updates/contrib Translation-en
-Hit ftp://ftp.debian.org wheezy-updates/main Translation-en/DiffIndex
-Hit ftp://ftp.debian.org wheezy-updates/non-free Translation-en
+Hit http://ftp.debian.org wheezy-updates Release.gpg
+Hit http://ftp.debian.org wheezy-backports Release.gpg
+Hit http://ftp.debian.org wheezy Release
+Hit http://ftp.debian.org wheezy-updates Release
+Hit http://ftp.debian.org wheezy-backports Release
+Hit http://ftp.debian.org wheezy/main amd64 Packages
+Hit http://ftp.debian.org wheezy/contrib amd64 Packages
+Hit http://ftp.debian.org wheezy/non-free amd64 Packages
+Hit http://ftp.debian.org wheezy/main i386 Packages
+Hit http://ftp.debian.org wheezy/contrib i386 Packages
+Hit http://ftp.debian.org wheezy/non-free i386 Packages
+Hit http://ftp.debian.org wheezy/contrib Translation-en
+Hit http://ftp.debian.org wheezy/main Translation-en
+Hit http://ftp.debian.org wheezy/non-free Translation-en
+Hit http://ftp.debian.org wheezy-updates/main amd64 Packages/DiffIndex
+Hit http://ftp.debian.org wheezy-updates/main i386 Packages/DiffIndex
+Hit http://ftp.debian.org wheezy-updates/main Translation-en/DiffIndex
+Hit http://ftp.debian.org wheezy-backports/main amd64 Packages/DiffIndex
+Hit http://ftp.debian.org wheezy-backports/main i386 Packages/DiffIndex
+Hit http://ftp.debian.org wheezy-backports/main Translation-en/DiffIndex
 Reading package lists...
 Reading package lists...
 Building dependency tree...
@@ -54,6 +41,78 @@ mysql-client is already the newest version.
 mysql-client-5.5 is already the newest version.
 mysql-server-5.5 is already the newest version.
 php5 is already the newest version.
+The following package was automatically installed and is no longer required:
+  liblockdev1
+Use 'apt-get autoremove' to remove it.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Hit http://security.debian.org wheezy/updates Release.gpg
+Hit http://security.debian.org wheezy/updates Release
+Get:1 http://security.debian.org wheezy/updates/main Sources [89.2 kB]
+Hit http://ftp.debian.org wheezy Release.gpg
+Hit http://security.debian.org wheezy/updates/main amd64 Packages
+Hit http://ftp.debian.org wheezy-updates Release.gpg
+Hit http://security.debian.org wheezy/updates/main i386 Packages
+Hit http://security.debian.org wheezy/updates/main Translation-en
+Hit http://ftp.debian.org wheezy-backports Release.gpg
+Hit http://ftp.debian.org wheezy Release
+Hit http://ftp.debian.org wheezy-updates Release
+Hit http://ftp.debian.org wheezy-backports Release
+Get:2 http://ftp.debian.org wheezy/main Sources [5,956 kB]
+Hit http://ftp.debian.org wheezy/main amd64 Packages
+Hit http://ftp.debian.org wheezy/contrib amd64 Packages
+Hit http://ftp.debian.org wheezy/non-free amd64 Packages
+Hit http://ftp.debian.org wheezy/main i386 Packages
+Hit http://ftp.debian.org wheezy/contrib i386 Packages
+Hit http://ftp.debian.org wheezy/non-free i386 Packages
+Hit http://ftp.debian.org wheezy/contrib Translation-en
+Hit http://ftp.debian.org wheezy/main Translation-en
+Hit http://ftp.debian.org wheezy/non-free Translation-en
+Get:3 http://ftp.debian.org wheezy-updates/main Sources [3,399 B]
+Hit http://ftp.debian.org wheezy-updates/main amd64 Packages/DiffIndex
+Hit http://ftp.debian.org wheezy-updates/main i386 Packages/DiffIndex
+Hit http://ftp.debian.org wheezy-updates/main Translation-en/DiffIndex
+Hit http://ftp.debian.org wheezy-backports/main amd64 Packages/DiffIndex
+Hit http://ftp.debian.org wheezy-backports/main i386 Packages/DiffIndex
+Hit http://ftp.debian.org wheezy-backports/main Translation-en/DiffIndex
+Fetched 6,049 kB in 10s (570 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+libboost-all-dev is already the newest version.
+build-essential is already the newest version.
+libdb5.1++-dev is already the newest version.
+libdb5.1-dev is already the newest version.
+libdb++-dev is already the newest version.
+python-setuptools is already the newest version.
+git is already the newest version.
+libgtk2.0-dev is already the newest version.
+libmemcached-dev is already the newest version.
+memcached is already the newest version.
+mingw32 is already the newest version.
+libminiupnpc-dev is already the newest version.
+libssl-dev is already the newest version.
+php5-memcached is already the newest version.
+python-dev is already the newest version.
+python-memcache is already the newest version.
+python-mysqldb is already the newest version.
+qt-sdk is already the newest version.
+libqt4-core is already the newest version.
+libqt4-dev is already the newest version.
+libqt4-gui is already the newest version.
+qt4-dev-tools is already the newest version.
+qt4-qmake is already the newest version.
+python-simplejson is already the newest version.
+synaptic is already the newest version.
+python-twisted is already the newest version.
+libapache2-mod-php5 is already the newest version.
+php5-common is already the newest version.
+php5-curl is already the newest version.
+php5-mysqlnd is already the newest version.
 The following package was automatically installed and is no longer required:
   liblockdev1
 Use 'apt-get autoremove' to remove it.

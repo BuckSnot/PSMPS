@@ -1,0 +1,83 @@
+#!/bin/sh
+
+# CLEAR THE CLI
+clear 
+
+
+
+
+echo "PSMP INSTALL STARTED (startInstall Script)" > /PSMPS2/logs/main.log
+
+# CONTINUE ONLY IF ROOT USER!
+if [[ $EUID -ne 0 ]]; then
+
+	echo "PSMP INSTALL START FAILED - NOT ROOT! (startInstall Script)" > /PSMPS2/logs/main.log
+
+	echo ""
+	echo "PSMPS Start Install Script"
+	echo ""		
+
+	echo "You must be a root user to execute this script!"
+	echo "Please execute 'su' in terminal, enter the root"
+	echo "password, and execute this script again!"
+	echo ""
+
+	exit 1
+
+fi
+
+
+sContinue=SGISDIFgSDFgikjsdGikdFHfgh
+
+until [ "$sContinue" = "yes" ]
+do
+	
+	if [ "$sContinue" = "quit" ] ; then
+		
+		echo "PSMP INSTALL ABORTED BY USER (startInstall Script)" >> /PSMPS2/logs/main.log
+
+		clear
+
+		echo ""
+		echo "PSMPS Start Install Script"
+		echo ""
+	
+		echo "Sorry you've got to leave :( See you next time!"
+		echo ""
+
+		exit 0		
+		
+	else #### ELSE ######
+	
+		#CLEAR THE CLI
+		
+		clear
+		
+		echo ""
+		echo "PSMPS Start Install Script"
+		echo ""
+		
+		if [ "$sContinue" != "SGISDIFgSDFgikjsdGikdFHfgh" ] ; then
+			echo "You must put in exactly 'yes', or 'quit'"
+                	echo ""			
+		fi
+
+		echo "WARNING: THIS WILL DELETE OLD PSMPS DIR AND RE-GIT A NEW ONE!"
+		echo "         Quit now and make backups of your configs!"
+		echo ""
+		echo "Continue with install? (yes/quit)"
+	        read sContinue
+        	echo ""
+		
+	
+	fi
+
+
+done
+
+
+cp /PSMPS2/scripts/reGitProject /
+
+chmod +x /reGitProject
+
+/reGitProject
