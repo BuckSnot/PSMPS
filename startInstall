@@ -65,6 +65,8 @@ do
 		echo "WARNING: THIS WILL DELETE OLD PSMPS DIR AND RE-GIT A NEW ONE!"
 		echo "         Quit now and make backups of your configs!"
 		echo ""
+		echo "ReGit of the project is mandatory (because of updates)"
+		echo ""
 		echo "Continue with install? (yes/quit)"
 	        read sContinue
         	echo ""
@@ -75,9 +77,10 @@ do
 
 done
 
+echo "StartInstall Executed!" > /var/log/psmps-install.log
 
-cp /PSMPS2/scripts/reGitProject /
+cp /PSMPS2/scripts/reGitProject / >> /var/log/psmps-install.log
 
-chmod +x /reGitProject
+chmod +x /reGitProject >> /var/log/psmps-install.log
 
 /reGitProject

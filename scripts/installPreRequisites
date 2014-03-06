@@ -3,7 +3,7 @@
 # CLEAR THE CLI
 clear 
 
-echo "DONE REGIT"
+echo "DONE REGITasdasdasd"
 
 exit 0
 
@@ -45,6 +45,7 @@ do
 		echo ""
 		echo "PSMPS PreRequisite Install"
 		echo ""
+		echo "You may install PreRequisites later by running /PSMPS/scripts/installPreRequisites"
 	
 		echo "Sorry you've got to leave :( See you next time!"
 		echo ""

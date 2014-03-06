@@ -11,104 +11,58 @@ clear
 #
 #
 
-
+echo ""
+echo "PSMPS ReGit Script"
+echo "PSMPS ReGit Script" >> /var/log/psmps-install.log
+echo ""
 
 echo "Attempting ReGit"
-
+echo "Attempting ReGit" >> /var/log/psmps-install.log
+echo ""
 
 
 # Change to root dir
 
-cd /
+cd /  >> /var/log/psmps-install.log
 
 # SUGGEST WIPING OLD INSTALL
 # COMMENTED so you don't accidentally paste it in
 #
 
-rm -rf /PSMPS2
+rm -rf /PSMPS2  >> /var/log/psmps-install.log
 
 
 echo "GITTING PROJECT"
+echo "GITTING PROJECT" >> /var/log/psmps-install.log
+echo ""
 
-
-# Git a clone of project
-echo "GITING PROJECT" #>> /PSMPS2/logs/main.log
-
-git clone https://github.com/kthxbai2u/PSMPS.git /PSMPS2/ #> /PSMPS2/logs/git.log
+git clone https://github.com/kthxbai2u/PSMPS.git /PSMPS2/ >> /var/log/psmps-install.log
 
 echo "CHMODDING FILES"
+echo "CHMODDING FILES" >> /var/log/psmps-install.log
+echo ""
 
 # Chmod and Chown folders
-echo "CHMODDING FILES" #>> /PSMPS2/logs/main.log
-
-chown -R www-data:www-data /PSMPS2
-chmod -R 775 /PSMPS2
-chmod -R 777 /PSMPS2/mining-servers/
-chmod -R 777 /PSMPS2/logs/
-chmod -R 777 /PSMPS2/scripts/
+chown -R www-data:www-data /PSMPS2 >> /var/log/psmps-install.log
+chmod -R 775 /PSMPS2 >> /var/log/psmps-install.log
+chmod -R 777 /PSMPS2/mining-servers/ >> /var/log/psmps-install.log
+chmod -R 777 /PSMPS2/logs/ >> /var/log/psmps-install.log
+chmod -R 777 /PSMPS2/scripts/ >> /var/log/psmps-install.log
 
 # This will allow any user to read all directories, 
 # and the user/group read/write. Permissions will
 # be further set later on.
 
-
+echo ""
 echo "Completed ReGit"
-
+echo ""
+echo "Starting PreRequisite Install"
 
 sleep 10
 
+cd /PSMPS2/scripts/ >> /var/log/psmps-install.log
 
+chmod +x installPreRequisites >> /var/log/psmps-install.log
 
-
-
-sContinue=SGISDIFgSDFgikjsdGikdFHfgh
-
-until [ "$sContinue" = "yes" ]
-do
-	
-	if [ "$sContinue" = "quit" ] ; then
-		
-		echo "PSMP INSTALL ABORTED BY USER" #>> /PSMPS2/logs/main.log
-
-		clear
-
-		echo ""
-		echo "PSMPS ReGit Script"
-		echo ""
-	
-		echo "You may manually run /PSMPS/scripts/installPreRequisites later :)"
-		echo "Sorry you've got to leave :( See you next time!"
-		echo ""
-
-		exit 0		
-		
-	else #### ELSE ######
-	
-		#CLEAR THE CLI
-		
-		clear
-		
-		echo ""
-		echo "PSMPS ReGit Script"
-		echo ""
-		
-		if [ "$sContinue" != "SGISDIFgSDFgikjsdGikdFHfgh" ] ; then
-			echo "You must put in exactly 'yes', or 'quit'"
-                	echo ""			
-		fi
-
-		echo "Continue with install (run installPreRequisites)? (yes/quit)"
-	        read sContinue
-        	echo ""
-	
-	fi
-
-
-done
-
-cd /PSMPS2/scripts/
-
-chmod +x installPreRequisites
-
-./installPreRequisites
+./installPreRequisites >> /var/log/psmps-install.log
 
