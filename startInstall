@@ -80,6 +80,12 @@ do
 done
 
 echo "" >> /var/log/psmps-install.log
+echo "FLUSHING PSMPS LOGS" >> /var/log/psmps-install.log
+echo "" >> /var/log/psmps-install.log
+
+rm -f /var/log/psmps*
+
+echo "" >> /var/log/psmps-install.log
 echo "Starting ReGit!" >> /var/log/psmps-install.log
 echo "ReGit Log is inside /var/log/psmps-regit.log" >> /var/log/psmps-install.log
 echo "" >> /var/log/psmps-install.log
