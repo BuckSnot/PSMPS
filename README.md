@@ -34,9 +34,10 @@ server)
 <b><u>Donations go towards</u></b> maintaining the server, keeping an active interest in this
 project, etc.</pre>
 
-<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>BitCoin:    	  1DkQUg4kkaTDZMkiTgg5tUQqprB9rkoeRZ
-LiteCoin:   	Ld6DAh7dbJEbBDvjG4yxCn61S3moMBWuU6
-MaxCoin:    	mabeu14vSaxfpMEBKcBnQ4JFeFSwH5sQR2
+<pre><code><div id='titlenshit' style='padding:10 10 10 10;text-align:left;width:730px;word-wrap:break-word;'>Please donate at least 0.1 coins as MCXNow takes everything below 0.1
+BitCoin:        1DkQUg4kkaTDZMkiTgg5tUQqprB9rkoeRZ
+LiteCoin:       Ld6DAh7dbJEbBDvjG4yxCn61S3moMBWuU6
+MaxCoin:        mabeu14vSaxfpMEBKcBnQ4JFeFSwH5sQR2
 MinCoin:    	M8hnkyZM9SJwwot2xD6qbsd3TafpbH4Bwe
 
 CopperLark: 	CQQuj9brvjfVJ7Ztw8kiEYsvvp8o9hAzfo
