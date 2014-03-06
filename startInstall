@@ -6,12 +6,18 @@ clear
 
 
 
-echo "PSMP INSTALL STARTED (startInstall Script)" #> /PSMPS2/logs/main.log
+echo "PSMP INSTALL STARTED (startInstall Script)" > /var/log/psmps-install.log
+echo "" >> /var/log/psmps-install.log
+echo "Main Install Log is inside /var/log/psmps-install"
+echo "" >> /var/log/psmps-install.log
+
+sleep 4
+
 
 # CONTINUE ONLY IF ROOT USER!
 if [[ $EUID -ne 0 ]]; then
 
-	echo "PSMP INSTALL START FAILED - NOT ROOT! (startInstall Script)" #> /PSMPS2/logs/main.log
+	echo "PSMP INSTALL START FAILED - NOT ROOT! (startInstall Script)" >> /var/log/psmps-install.log
 
 	echo ""
 	echo "PSMPS Start Install Script"
@@ -34,7 +40,7 @@ do
 	
 	if [ "$sContinue" = "quit" ] ; then
 		
-		echo "PSMP INSTALL ABORTED BY USER (startInstall Script)" #>> /PSMPS2/logs/main.log
+		echo "PSMP INSTALL ABORTED BY USER (startInstall Script)" >> /var/log/psmps-install.log
 
 		clear
 
@@ -77,7 +83,12 @@ do
 
 done
 
-echo "StartInstall Executed!" > /var/log/psmps-install.log
+echo "" >> /var/log/psmps-install.log
+echo "Starting ReGit!" >> /var/log/psmps-install.log
+echo "ReGit Log is inside /var/log/psmps-regit.log" >> /var/log/psmps-install.log
+echo "" >> /var/log/psmps-install.log
+
+sleep 4
 
 cp /PSMPS2/scripts/reGitProject / >> /var/log/psmps-install.log
 
