@@ -7,8 +7,6 @@ clear
 # CONTINUE ONLY IF ROOT USER!
 sUserName=$(whoami)
 
-echo "$sUserName"
-
 if [ "$sUserName" != "root" ] ; then
 
 	echo ""
