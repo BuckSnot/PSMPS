@@ -98,7 +98,7 @@ echo "" >> /var/log/psmps-install.log
 
 sleep 4
 
-cp /PSMPS2/scripts/reGitProject / >> /var/log/psmps-install.log
+cp /PSMPS/scripts/reGitProject / >> /var/log/psmps-install.log
 
 chmod +x /reGitProject >> /var/log/psmps-install.log
 
