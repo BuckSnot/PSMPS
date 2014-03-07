@@ -17,10 +17,9 @@ server that has ability to reinstall, do it and select Debian
 at the end of the day of release (2459)
 
 
-Once payment is made, please email <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a> from your
-(Regular/PayPal/AlertPay/Interac) email. We will respond with a password and archive
-containing the rest of the installation instructions. You will probably be lost
-without them :)
+Once payment is made, please email <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a> from your (Regular / 
+PayPal / AlertPay / Interac) email. We will respond with a password and archive containing
+the rest of the installation instructions. You will probably be lost without them :)
 
 
 If sending an Alertpay / PayPal / Interac Email Money Transfer please send it to:
