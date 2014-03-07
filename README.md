@@ -8,9 +8,8 @@ Website:    <a href="http://www.poolserv.info/" target="_blank">http://PoolServ.
 GitHub:     <a href="https://github.com/kthxbai2u/PSMPS.git" target="_blank">https://github.com/kthxbai2u/PSMPS.git</a>
 YouTube:    <a href="https://www.youtube.com/watch?v=qB-E6f8SCjQ" target="_blank">https://www.youtube.com/watch?v=qB-E6f8SCjQ</a></div></code></pre>
 
-<pre><code>NOTE: These scripts are for Debian. If you are not using Debian,
-you may have a tiny problem :P If you are using a VPS or Dedicated
-server that has ability to reinstall, do it and select latest stableDebian
+<pre><code>NOTE: These scripts are for Debian. If you are not using Debian, you may have a tiny problem :P
+If you are using a VPS or Dedicated server that has ability to reinstall, do it and select latest stableDebian
 </code></pre>
 
 <pre><b>Pre-Registration will <u>only cost you $20 USD</u> and the <u>price will rise to $50 USD</u>
