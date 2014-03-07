@@ -12,15 +12,14 @@ convert these at your own risk :P If you are using a VPS or Dedicated
 server that has ability to reinstall, do it and select Debian
 </code></pre>
 
-<pre><b>Pre-Registration will <u>only cost you $2 USD</u> and the <u>price will rise to $5 USD</u>
+<pre><b>Pre-Registration will <u>only cost you $20 USD</u> and the <u>price will rise to $50 USD</u>
 at the end of the day of release (2459)
 
-Initial release will be a <u>mandatory $5 USD</u> or equivalent in coins below.</b>
 
-Once donated, please email <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a> from your (Regular/PayPal/AlertPay/
-Interac) email. If you've donated any kind of coin please include the wallet address
-sent from. We will respond with a password and archive containing the rest of the
-installation instructions. You will probably be lost without them :)
+Once payment is made, please email <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a> from your
+(Regular/PayPal/AlertPay/Interac) email. We will respond with a password and archive containing
+the rest of the installation instructions. You will probably be lost without them :)
+
 
 If sending an Alertpay / PayPal / Interac Email Money Transfer please send it to:
 <a href='mailto:donations@poolserv.info'>donations@poolserv.info</a>
