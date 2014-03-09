@@ -17,8 +17,7 @@
 
 FOR v1.01 THE FOLLOWING IS LEFT TO DO
 
-- psmps-install-wallet (one last thing... attempt adding coindaemon (wallet server) to auto get the path to itself. If cant it will ask. Very quick to do :D)
-- psmps-install-stratum (Installs Stratum)
+
 - psmps-install-mpos (Installs MPOS - EAsY)
 - psmps-install-scripts (install links to every script in sbin - EAsY)
 
