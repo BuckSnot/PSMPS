@@ -12,9 +12,6 @@
 
 FOR v1.01 THE FOLLOWING IS LEFT TO DO
 
-
-
-
 - psmps-install-configs (installs symbolic links to csf configs in each coin dir - SUPER EASY :D
 )
 
@@ -29,9 +26,6 @@ FOR v1.01 THE FOLLOWING IS LEFT TO DO
 
 
 FOR the v1.2 INSTALL and v1.01 - v1.2 UPDATE THE FOLLOWING IS LEFT TO DO
-
-
-
 
 - psmps-repair-permissions (Resets Ownership/Permissions - EAsY)
 - psmps-repair-crontab (checks/adds coinname to crontab - EAsY)
