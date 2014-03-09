@@ -5,7 +5,11 @@
 	In short, I will optimize tasks so the version will be split to have an update
 	later for unimportant scripts. :) The most efficient route to release :D
 
-	Last Update:		2256 EST (GMT-0500)
+	Last Update:		0011 EST (GMT-0500)
+	Updated Release Time:	Tomorrow (its 2355) 0800 - 1400 EST (GMT-0500)
+
+	NOTE: Working all night. May not update dev notes as much. 
+	      I will be working on this until 1400 tomorrow.
 
 */
 
@@ -13,7 +17,8 @@
 
 FOR v1.01 THE FOLLOWING IS LEFT TO DO
 
-- psmps-install-stratum (Installs Stratum - EAsY-ish-to-difficult-ish)
+- psmps-install-wallet (one last thing... attempt adding coindaemon (wallet server) to auto get the path to itself. If cant it will ask. Very quick to do :D)
+- psmps-install-stratum (Installs Stratum)
 - psmps-install-mpos (Installs MPOS - EAsY)
 - psmps-install-scripts (install links to every script in sbin - EAsY)
 
@@ -30,6 +35,9 @@ FOR the v1.2 INSTALL and v1.01 - v1.2 UPDATE THE FOLLOWING IS LEFT TO DO
 - psmps-repair-startup (checks/adds coinname to startup script - EAsY)
 - psmps-repair-configs (repairs symbolic links to csf config, coin configs,stratum configs, and MPOS configs in each coin dir - SUPER EASY :D)
 - psmps-repair-all-scripts (Run every repair script) - Super Easy :D)
+
+Stratum / MPOS change:
+- Allow static assigned git address, or have option to custom git / wget like the wallet install.
 
 
 
