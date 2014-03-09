@@ -12,9 +12,6 @@
 
 FOR v1.01 THE FOLLOWING IS LEFT TO DO
 
-- psmps-install-configs (installs symbolic links to csf configs in each coin dir - SUPER EASY :D
-)
-
 - psmps-install-stratum (Installs Stratum - EAsY-ish-to-difficult-ish)
 - psmps-install-mpos (Installs MPOS - EAsY)
 - psmps-install-scripts (install links to every script in sbin - EAsY)
@@ -30,6 +27,7 @@ FOR the v1.2 INSTALL and v1.01 - v1.2 UPDATE THE FOLLOWING IS LEFT TO DO
 - psmps-repair-permissions (Resets Ownership/Permissions - EAsY)
 - psmps-repair-crontab (checks/adds coinname to crontab - EAsY)
 - psmps-repair-startup (checks/adds coinname to startup script - EAsY)
+- psmps-repair-configs (repairs symbolic links to csf config, coin configs,stratum configs, and MPOS configs in each coin dir - SUPER EASY :D)
 - psmps-repair-all-scripts (Run every repair script) - Super Easy :D)
 
 
