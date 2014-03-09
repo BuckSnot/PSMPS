@@ -29,9 +29,9 @@ rm -f /var/log/psmps-*
 
 
 #STAY IN ROOT FOLDER AND USE ABSOLUTE PATHS
-cd /  > /var/log/psmps-install.log
+cd /  > /var/log/psmps-install
 
-echo "PSMP MAIN INSTALL STARTED" >> /var/log/psmps-install.log
+echo "PSMP MAIN INSTALL STARTED" >> /var/log/psmps-install
 
 
 
@@ -43,7 +43,7 @@ do
 	
 	if [ "$sContinue" = "quit" ] ; then
 		
-		echo "PSMP INSTALL ABORTED BY USER (startInstall Script)" >> /var/log/psmps-install.log
+		echo "PSMP INSTALL ABORTED BY USER (startInstall Script)" >> /var/log/psmps-install
 
 		clear
 
@@ -90,18 +90,22 @@ do
 
 done
 
-echo "" >> /var/log/psmps-install.log
-echo "FLUSHING PSMPS LOGS" >> /var/log/psmps-install.log
-echo "" >> /var/log/psmps-install.log
+echo "" >> /var/log/psmps-install
+echo "FLUSHING PSMPS LOGS" >> /var/log/psmps-install
+echo "" >> /var/log/psmps-install
 
 rm -f /var/log/psmps*
 
-echo "" >> /var/log/psmps-install.log
-echo "Starting ReGit!" >> /var/log/psmps-install.log
-echo "ReGit Log is inside /var/log/psmps-regit.log" >> /var/log/psmps-install.log
-echo "" >> /var/log/psmps-install.log
+echo "" >> /var/log/psmps-install
+echo "Starting ReGit!" >> /var/log/psmps-install
+echo "ReGit Log is inside /var/log/psmps-regit.log" >> /var/log/psmps-install
+echo "" >> /var/log/psmps-install
 
-cp psmps-x-scriptonly-regitproject / >> /var/log/psmps-install.log
+cp psmps-x-scriptonly-regitproject / >> /var/log/psmps-install
+
+
+
+
 
 echo ""
 echo " Everything Graavvvvyyyy up til here :) "
@@ -121,7 +125,7 @@ echo ""
 
 sleep 4
 
-chmod +x /PSMPS/scripts/psmps-x-scriptonly-regitproject >> /var/log/psmps-install.log
+chmod +x /PSMPS/scripts/psmps-x-scriptonly-regitproject >> /var/log/psmps-install
 
 psmps-x-scriptonly-regitproject
 
