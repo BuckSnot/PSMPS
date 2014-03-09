@@ -24,6 +24,9 @@ fi
 
 
 
+#clear all logs
+rm -f /var/log/psmps-*
+
 
 #STAY IN ROOT FOLDER AND USE ABSOLUTE PATHS
 cd /  > /var/log/psmps-install.log
@@ -33,7 +36,7 @@ echo "PSMP MAIN INSTALL STARTED" >> /var/log/psmps-install.log
 
 
 
-sContinue=SGISDIFgSDFgikjsdGikdFHfgh
+
 
 until [ "$sContinue" = "yes" ]
 do
@@ -47,6 +50,8 @@ do
 		echo ""
 		echo "PSMPS Start Install Script"
 		echo ""
+
+		echo "You may install later using /PSMPS/psmps-install"
 	
 		echo "Sorry you've got to leave :( See you next time!"
 		echo ""
@@ -63,7 +68,7 @@ do
 		echo "PSMPS Start Install Script"
 		echo ""
 		
-		if [ "$sContinue" != "SGISDIFgSDFgikjsdGikdFHfgh" ] ; then
+		if [ "$sContinue" != "" ] ; then
 			echo "You must put in exactly 'yes', or 'quit'"
                 	echo ""			
 		fi
@@ -76,6 +81,7 @@ do
 		echo "" 		
 		echo "Continue with install? Please type 'yes' or 'quit'."
 	        read sContinue
+		sContinue=`echo $sContinue | tr [:upper:] [:lower:]`
         	echo ""
 		
 	
@@ -95,10 +101,28 @@ echo "Starting ReGit!" >> /var/log/psmps-install.log
 echo "ReGit Log is inside /var/log/psmps-regit.log" >> /var/log/psmps-install.log
 echo "" >> /var/log/psmps-install.log
 
+cp psmps-x-scriptonly-regitproject / >> /var/log/psmps-install.log
+
+echo ""
+echo " Everything Graavvvvyyyy up til here :) "
+echo ""
+echo ""
+echo "END OF THIS SCRIPT! THANK YOU FOR PURCHASING,"
+echo "USING, AND SUPPORTING MY SCRIPT!"
+echo ""
+echo "kthx / kthxbai2u / kthxdie / Shawn Read"
+echo "http://www.PoolServ.info/"
+echo ""
+echo ""
+echo "LOGS inside /var/log/ directory"
+echo "cat /var/log/psmps-*"
+echo ""
+echo ""
+
 sleep 4
 
-cp /PSMPS/scripts/reGitProject / >> /var/log/psmps-install.log
+chmod +x /PSMPS/scripts/psmps-x-scriptonly-regitproject >> /var/log/psmps-install.log
 
-chmod +x /reGitProject >> /var/log/psmps-install.log
+psmps-x-scriptonly-regitproject
 
-/reGitProject
+exit 0
