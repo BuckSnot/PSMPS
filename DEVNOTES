@@ -25,6 +25,9 @@ FOR v1.01 THE FOLLOWING IS LEFT TO DO
 
 FOR the v1.2 INSTALL and v1.01 - v1.2 UPDATE THE FOLLOWING IS LEFT TO DO
 
+- FULL auto config - Answer questions to PSMPS only, no need to open an editor!
+	- Using grep/sed ins combo to auto config most wallets, the stratum, and mpos settings with only minimal user input.
+	
 - psmps-repair-permissions (Resets Ownership/Permissions - EAsY)
 - psmps-repair-crontab (checks/adds coinname to crontab - EAsY)
 - psmps-repair-startup (checks/adds coinname to startup script - EAsY)
