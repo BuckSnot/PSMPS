@@ -5,11 +5,12 @@
 	In short, I will optimize tasks so the version will be split to have an update
 	later for unimportant scripts. :) The most efficient route to release :D
 
-	Last Update:		14/03/09 - 1619 EST (GMT-0500)
-	Updated Release Time:	Today some time
+	Last Update:		14/03/10 - 1432 EST (GMT-0500)
+	
+	Updated Release Time:	I am not sure anymore :-/ Hopefully no more than tonight.
 
-	NOTE: Working all night. May not update dev notes as much. 
-	      I will be working on this until 1400 tomorrow.
+	NOTE: hammering out some bugs, then just gotta add things to startup and crontab
+	      and then we're ready for a quick test :D
 
 */
 
@@ -17,10 +18,9 @@
 
 FOR v1.01 THE FOLLOWING IS LEFT TO DO
 
-- psmps-install-mpos (Installs MPOS - EAsY)
-
-
-
+- Stratum Install - WORKING - need testing on my 'virgin' server
+- MPOS Install - WORKING - need testing on my 'virgin' server
+- Wallet Install - WORKING - need testing on my 'virgin' server -- startup script also needs linking) and need shutdown script or start | restart | stop ability. Run update-rc.d to add script to startup :)
 
 
 FOR the v1.2 INSTALL and v1.01 - v1.2 UPDATE THE FOLLOWING IS LEFT TO DO
