@@ -5,9 +5,9 @@
 	In short, I will optimize tasks so the version will be split to have an update
 	later for unimportant scripts. :) The most efficient route to release :D
 
-	Last Update:		14/03/11 - 1610 EST (GMT-0500)
+	Last Update:		14/03/11 - 2336 EST (GMT-0500)
 	
-	Updated Release Time:	Today??? :)
+	Updated Release Time:	Tonight/Tomorrow??? (14/03/12) :)
 				Just have to be out of my house between 1800 EST & 1930EST (it is being shown so I can move out)
 
 	NOTE: Just have a few small tasks to do then release !!!
@@ -18,8 +18,19 @@
 
 FOR v1.01 THE FOLLOWING IS LEFT TO DO
 
-- Full testing (front-back install) on my 'virgin' server
-- Add to startup (easy - one command within a script)
+- Full testing (front-back install) on my 'virgin' server & then reboot it (see if startup works)
+	* Need to test:
+	* Ensure instructions on configuration are clear
+	* AddCoin - Add's user, creates user folder and copies skeleton.
+	* Install PreRequisites
+	* Ability to download/extract/compile most coin wallets from git or wget
+	* Stratum install
+	* MPOS install
+	* Startup
+	* Crontab
+	* Check MPOS in browser :D
+
+
 
 FOR the v1.2 INSTALL and v1.01 - v1.2 UPDATE THE FOLLOWING IS LEFT TO DO
 

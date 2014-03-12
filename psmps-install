@@ -106,6 +106,18 @@ cp psmps-x-scriptonly-regitproject / >> /var/log/psmps-install
 
 
 
+# Add link in init.d to startup script
+
+`ln -s /PSMPS/init.d/psmps /etc/init.d/psmps`
+
+# Add links to the rc3.d rc4.d and rc5.d -- beacause update-rc.d wont work some reason. manual add.
+
+`ln -s /PSMPS/init.d/psmps /etc/rc2.d/S09psmps`
+`ln -s /PSMPS/init.d/psmps /etc/rc3.d/S09psmps`
+`ln -s /PSMPS/init.d/psmps /etc/rc4.d/S09psmps`
+`ln -s /PSMPS/init.d/psmps /etc/rc5.d/S09psmps`
+
+
 
 echo ""
 echo " Everything Graavvvvyyyy up til here :) "
